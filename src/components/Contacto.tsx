@@ -3,6 +3,13 @@ import { cn } from "@/lib/utils";
 import { contacto } from "@/data/contacto";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
 
+function formatWhatsapp(num: string) {
+  if (num.length === 11 && num.startsWith("56") && num[2] === "9") {
+    return `+56 9 ${num.slice(3, 7)} ${num.slice(7)}`;
+  }
+  return `+${num}`;
+}
+
 export default function Contacto() {
   const redesActivas = contacto.redes.filter((red) => red.url);
 
@@ -45,7 +52,7 @@ export default function Contacto() {
               <div>
                 <p className="text-sm text-rema-stone-soft">WhatsApp</p>
                 <p className="font-medium text-rema-petroleum">
-                  +56 9 0000 0000
+                  {formatWhatsapp(contacto.whatsappNumero)}
                 </p>
               </div>
             </a>
@@ -76,7 +83,7 @@ export default function Contacto() {
                 </span>
               )}
               <span className="text-xs text-rema-stone-soft italic">
-                (Ajusta las URLs en src/data/contacto.ts)
+                (Ajusta Facebook y YouTube en src/data/contacto.ts)
               </span>
             </div>
           </div>
