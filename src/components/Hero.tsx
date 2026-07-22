@@ -47,14 +47,14 @@ export default function Hero() {
           </AnimateOnScroll>
 
           <AnimateOnScroll delay={150}>
-            <div className="relative mx-auto w-full max-w-lg">
-              <div className="absolute inset-0 rounded-3xl bg-rema-orange/25 blur-2xl" />
+            <div className="relative mx-auto w-full max-w-md">
+              <div className="absolute inset-0 rounded-3xl bg-rema-orange/30 blur-2xl" />
               <Image
-                src="/rema-maule/rema-maule-transparente.png"
+                src="/rema-maule/remamaule.jpg"
                 alt="Logo REMA Maule"
-                width={786}
-                height={470}
-                className="relative drop-shadow-2xl"
+                width={640}
+                height={641}
+                className="relative rounded-3xl shadow-xl"
                 priority
               />
             </div>
