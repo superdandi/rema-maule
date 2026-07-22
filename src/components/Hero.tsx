@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import { contacto } from "@/data/contacto";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
@@ -47,15 +46,12 @@ export default function Hero() {
           </AnimateOnScroll>
 
           <AnimateOnScroll delay={150}>
-            <div className="relative mx-auto w-full max-w-md">
-              <div className="absolute inset-0 rounded-3xl bg-rema-orange/30 blur-2xl" />
-              <Image
-                src="/rema-maule/remamaule.jpg"
+            <div className="relative mx-auto w-full max-w-lg">
+              <div className="absolute inset-0 rounded-3xl bg-rema-orange/25 blur-2xl" />
+              <img
+                src="/rema-maule/rema-maule-logo.svg"
                 alt="Logo REMA Maule"
-                width={640}
-                height={641}
-                className="relative rounded-3xl shadow-xl"
-                priority
+                className="relative w-full h-auto drop-shadow-2xl"
               />
             </div>
           </AnimateOnScroll>
