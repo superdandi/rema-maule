@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@theme {
+  --color-rema-cream: #F8ECE0;
+  --color-rema-cream-warm: #E9CFB0;
+  --color-rema-petroleum: #0A2C4D;
+  --color-rema-petroleum-light: #123A61;
+  --color-rema-orange: #D0560F;
+  --color-rema-orange-dark: #B4440A;
+  --color-rema-terracotta: #B4622F;
+  --color-rema-olive: #5D6132;
+  --color-rema-olive-light: #707E8B;
+  --color-rema-stone: #1A1410;
+  --color-rema-stone-soft: #4A4038;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-rema-cream);
+    color: var(--color-rema-stone);
+    font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-playfair), ui-serif, Georgia, serif;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
