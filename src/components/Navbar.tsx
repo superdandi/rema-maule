@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { contacto } from "@/data/contacto";
@@ -21,13 +20,10 @@ export default function Navbar() {
     <header className="fixed inset-x-0 top-0 z-50 border-b border-rema-olive/10 bg-rema-cream/90 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <a href="#inicio" className="flex items-center gap-3">
-          <Image
-            src="/rema-maule/remamaule.jpg"
+          <img
+            src="/rema-maule/rema-maule-transparente.svg"
             alt="REMA Maule"
-            width={56}
-            height={56}
-            className="h-12 w-auto"
-            priority
+            className="h-10 w-auto md:h-12"
           />
           <span className="font-[family-name:var(--font-playfair)] text-lg font-semibold text-rema-petroleum">
             REMA Maule
