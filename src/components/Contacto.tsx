@@ -82,9 +82,6 @@ export default function Contacto() {
                   Próximamente en redes sociales.
                 </span>
               )}
-              <span className="text-xs text-rema-stone-soft italic">
-                (Ajusta Facebook y YouTube en src/data/contacto.ts)
-              </span>
             </div>
           </div>
         </AnimateOnScroll>
