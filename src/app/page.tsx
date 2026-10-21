@@ -1,6 +1,7 @@
 import Hero from "@/components/Hero";
 import Presentacion from "@/components/Presentacion";
 import Identidad from "@/components/Identidad";
+import Documentos from "@/components/Documentos";
 import AreaMusical from "@/components/AreaMusical";
 import LineasEstrategicas from "@/components/LineasEstrategicas";
 import QueHacemos from "@/components/QueHacemos";
@@ -13,6 +14,7 @@ export default function Home() {
       <Hero />
       <Presentacion />
       <Identidad />
+      <Documentos />
       <AreaMusical />
       <LineasEstrategicas />
       <QueHacemos />

@@ -8,6 +8,7 @@ import { contacto } from "@/data/contacto";
 const links = [
   { label: "Presentación", href: "#presentacion" },
   { label: "Identidad", href: "#identidad" },
+  { label: "Documentos", href: "#documentos" },
   { label: "Música", href: "#musica" },
   { label: "Líneas estratégicas", href: "#lineas" },
   { label: "Contacto", href: "#contacto" },
